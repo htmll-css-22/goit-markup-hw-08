@@ -1,0 +1,41 @@
+.contacts {
+    padding: 60px 0;
+    background-color: var(--footer-background);
+    }
+    
+    .contacts-list > .item {
+    display: flex;
+    align-items: center;
+    }
+    .contacts,
+    .contacts-adress,
+    .contacts-item
+    {
+      @include fonts(400, 14px, 1.14, 0.02em );
+    
+    color: #FFFFFF;
+    
+    }
+    
+    .contacts-adress  {
+      margin-top: 20px;
+    }
+    .contacts-item {
+      margin-top: 9px;
+    }
+    .contacts-link {  
+      @include fonts(400, 14px, 1.71, null );
+    
+    color: rgba(255, 255, 255, 0.6);
+    transition: var(--slow-anim);
+
+     &:hover,
+     &:focus {
+      color: #2196F3;
+    }
+    }
+     
+    .contacts-list {
+      display: block;
+    }
+    

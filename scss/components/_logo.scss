@@ -1,0 +1,31 @@
+.logo__link {
+    font-family: Raleway;
+    @include fonts(700, 26px, 1.19, 0.03em );
+   
+    color: #000000;
+    margin-right: 93px;
+}
+
+.logo-footer {
+    font-family: Raleway;
+    @include fonts(700, 26px, 1.19, 0.03em );
+   
+    color: #FFFFFF;
+
+}
+
+.logo__text {
+    font-family: Raleway;
+    @include fonts(700, 26px, 1.19, 0.03em );
+   
+
+    color: #2196F3;
+}
+.logo-secondary {
+    font-family: var(--secondary-font);
+    @include fonts(700, 26px, 1.19, 0.03em );
+    
+    color: #2196F3
+    
+    }
+  

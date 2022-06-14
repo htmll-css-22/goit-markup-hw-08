@@ -1,0 +1,15 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container:nth-child(2),
+.container:nth-child(3),
+.container:nth-child(4),
+.container:nth-child(5) {
+    padding-bottom: 94px;
+}

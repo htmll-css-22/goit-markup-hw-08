@@ -1,0 +1,40 @@
+.advantages {
+    padding-top: 94px;
+    
+  }
+  .advantages__list {
+    display: flex;
+  }
+  
+  .advantages__title {
+
+    @include fonts(700, 14px, 1.14, 0.03em, uppercase );
+  
+  text-align: start;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 270px;
+  color: #212121;
+  
+  }
+  
+  .advantages__text {
+
+    @include fonts(400, 14px, 1.71, 0.03em );
+ 
+  color: #757575;
+  text-align: start;
+  margin: 0;
+
+  & {
+  
+    width: 270px;
+    
+  }  
+  
+  }
+
+  .advantages .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  

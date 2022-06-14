@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    /* Основные шрифты */
+    
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --accent-cl: #2196F3;
+    
+  
+    /* Темная тема фона*/
+    --primary-bg--mode-dark: #191c26;
+    --secondary-bg--mode-dark: #111319;
+    --footer-background: #2F303A;
+    --color5: #AFB1B8;
+    --color3:  #2196F3;
+  
+    /* animations */
+    --slow-anim: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    --transition-timing: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-function: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+   
+

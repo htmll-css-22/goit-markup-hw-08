@@ -1,0 +1,94 @@
+// @mixin btn {
+//     padding: 12px 20px;
+//     max-width: 200px;
+//     min-width: 160px;
+//     min-height: 40px;
+  
+//     font-family: inherit;
+//     font-weight: 600;
+//     font-size: 12px;
+//     line-height: 1.33;
+//     letter-spacing: 0.09em;
+//     text-transform: uppercase;
+  
+//     border: 1px solid var(--accent-cl);
+//     border-radius: 25px;
+//     background-color: transparent;
+//     cursor: pointer; 
+  
+//     transition: background-color var(--fast-anim);
+//   }
+  @mixin fonts($fw, $fs, $lh, $ls, $tt: false) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: setLineHeight($lh, $fs);
+    letter-spacing: $ls;
+  
+    @if $tt {
+      text-transform: $tt;
+    }
+  }
+  @mixin transition($transition-speed) {
+
+    transition: color $transition-speed, background-color $transition-speed, fill $transition-speed;
+
+  }
+  
+  @mixin transition1($transition-speed) {
+
+    transition: color $transition-speed, background-color $transition-speed, box-shadow $transition-speed;
+
+  }
+  @mixin transition2($transition-speed) {
+
+    transition: opacity $transition-speed, visibility $transition-speed;
+
+  }
+
+
+  // // @mixin transition($color, $back, $fill, $border) {
+  // //   $color:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // //   $back: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // //   $fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // //   $border: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ 
+  // //   transition: $color;
+  // //   transition: $back;
+  // //   transition: $fill;
+  // //   transition: $border
+
+    
+  // }
+  
+  @mixin main-button($width, $height, $border, 
+  $padding, $box, $transition-speed, $fill, 
+  $border-color, $hover-color, $color-fill, $left, $right)
+ {
+ display:inline-block;
+ border:none;
+ cursor:pointer;
+
+ width: $width;
+ height: $height;
+ border-radius: $border;
+ padding:$padding;
+ box-shadow: $box;
+ transition: color $transition-speed, background-color $transition-speed, fill $transition-speed;
+ fill: $fill;
+
+ &:hover,
+ &:focus
+ {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ 
+ background-color:$border-color;
+ color:$hover-color;
+ fill: $color-fill;
+ padding-left: $left;
+ padding-right: $right;
+ }
+ }

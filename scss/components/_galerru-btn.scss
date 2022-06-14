@@ -1,0 +1,18 @@
+.galerry {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+  }
+  .galerry > .container > .list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .galerry .list:first-of-type {
+    margin-bottom: 50px;
+  }
+  .galerry .item:not(:last-child) {
+    margin-right: 8px;
+  }
+ 
