@@ -4,10 +4,22 @@
     
   }
   .galerry > .container > .list {
+    @include mq (mobile){
+
+    display: flex;
+     justify-content: flex-start;
+    row-gap: 15px;
+    flex-wrap: wrap
+    }
+
+    @include mq (tablet){
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
   }
+}
   
   .galerry .list:first-of-type {
     margin-bottom: 50px;

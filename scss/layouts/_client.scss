@@ -6,39 +6,64 @@
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
-    
 }
-.title{
+.title {
   margin-top: 0;
-  
 }
-  
+
 .link-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   border: 1px solid var(--color5);
   border-radius: 4px;
-  width: 100%;
-  height: 100%;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-  
+
 .clients-box .item {
-  width: 170px;
-  height: 90px;
+  height: 92px;
+
+  @include mq(mobile) {
+    max-width: 210px;
+    width: 100%;
+  }
+  @include mq(tablet) {
+    max-width: 216px;
+    width: 100%;
+  }
+  @include mq(desktop) {
+    max-width: 170px;
+    width: 100%;
+  }
 }
-.item:not(:last-child){
+
+.clients-box {
+  @include mq(mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: -30px;
+  }
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+.item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-box{
+.clients-box {
   padding-left: 0;
 }
-  
+
 .client .link-logo:hover,
 .client .link-logo:focus {
   fill: var(--color3);

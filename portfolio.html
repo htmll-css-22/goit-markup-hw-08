@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module3-Portfolio</title>
+  <title>Module8-Portfolio</title>
   <!-- Основные шрифты -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
   <!-- Кастомные шрифты -->
-  <link rel="stylesheet" href="./css/styles.css">
-  
   <link rel="stylesheet" href="./css/main.min.css" >
 
 
@@ -22,14 +20,22 @@
   <header class="header"> 
   <div class="container header__container">
   <nav class="nav">
+    <div class="header__container">
     <a class="logo__link" href="./index.html"><span class="logo__text">Web</span>Studio</a>  
+    <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+      <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="mobile-button__icon">
+        <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+        </button>
+      </div>
       <ul class="nav-list">
         <li class="nav__item"><a class="link nav__link" href="./index.html">Студия</a></li>
         <li class="nav__item"><a class="link nav__link nav__link--current" href="./index.html">Портфолио</a></li>
         <li class="nav__item"><a class="link nav__link" href="">Контакты</a></li>
       </ul>
       </nav>
-      <ul class="contacts__list">
+      <ul class="contacts__lists">
           <li class="contacts__item"><a class="contacts__link link" href="mailto:info@example.com"><svg class="contacts__icon" width="16"
                 height="12">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
@@ -143,7 +149,7 @@
       <p class="subtitle" lang="ru">Приложение</p></div></a>
     </li>
 
-    <li class="galerry-card">
+    <li class="portfolio">
       <a class="link-galerry-card" href="">
         <div class="galerry-card-thumb">
           <img src="images/img6.jpg" alt="Логотип ресторана" class="image" width="370" height="294" />

@@ -1,23 +1,23 @@
 .icon-box {
-    display: flex;
-    justify-content: center;
-    height: 120px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    align-items: center;
-  
-    background-color: #F5F4FA;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 4px;
+
+  justify-content: center;
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 450px;
+  text-align: center;
+
+  @include mq(tablet) {
+    width: 354px;
   }
-  
-  .icon {
-    padding: 0;
-    border: none;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-  
-    border-radius: 4px;
-  
+  @include mq(desktop) {
+    width: 270px;
   }
+}
+
+.icon {
+  padding: 0;
+  border: none;
+}

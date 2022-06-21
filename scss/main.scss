@@ -1,35 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
 // utils
-@import './utils/vars';
-@import './utils/visually-hidden';
-@import './utils/placeholder';
-@import './utils/mixins';
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+@import "./utils/placeholder";
+@import "./utils/mixins";
 
-// base 
+// base
 
-@import './base/common';
-@import './base/reset';
-@import './base/container';
-@import './base/js-selectors';
-
+@import "./base/common";
+@import "./base/reset";
+@import "./base/container";
+@import "./base/js-selectors";
 
 // componets
-@import './components/button';
-@import './components/socials';
-@import './components/contacts';
-@import './components/galerru-btn';
-@import './components/modal-form';
-@import './components/contacts';
-@import './components/logo';
-@import './components/icon';
+@import "./components/button";
+@import "./components/socials";
+@import "./components/contacts";
+@import "./components/galerru-btn";
+@import "./components/modal-form";
+@import "./components/contacts";
+@import "./components/logo";
+@import "./components/icon";
+@import "./components/mobile-menu";
 
 // layouts
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/advantages';
-@import './layouts/team';
-@import './layouts/client';
-@import './layouts/footer';
-@import './layouts/portfolio';
-@import 'layouts/about';
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/team";
+@import "./layouts/client";
+@import "./layouts/footer";
+@import "./layouts/portfolio";
+@import "layouts/about";

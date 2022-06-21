@@ -1,46 +1,92 @@
 .team {
-    background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    
-  }
-   
-    
-  .team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    display: block;
-    color: #212121;
-  
-    margin: 0;
-    margin-bottom: 50px;
-  }
-  .team-card{
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .card  {
-    background-color: #FFFFFF;
-    display: block;
-    
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.team-title {
+  @include fonts(700, 36px, 1.17, 0.03em);
+
+  text-align: center;
+
+  display: block;
+  justify-content: space-between;
+  color: #212121;
+
+  margin: 0;
+  margin-bottom: 50px;
+  @include mq(mobile) {
+    margin-bottom: 30px;
+  }
+  @include mq(tablet) {
+    margin-bottom: 30px;
+  }
+}
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card {
+  background-color: #ffffff;
+  display: block;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @include mq(mobile) {
+    &:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
+  }
+  // @include mq(tablet){
+  //   &__item:not(:last-child){
+  //     margin-right: 30px;
+  //   }
+  //   &__item:nth-last-child(-n + 2){
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  @include mq(desktop) {
     &:not(:last-child) {
       margin-right: 30px;
-      }
+    }
+  }
+}
+
+.team-list {
+  display: flex;
+
+  @include mq(mobile-only) {
+    display: block;
+  }
+  @include mq(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.team__photo {
+  @include mq(mobile) {
+    width: 450px;
+    height: 460px;
   }
 
-  
-  .team-list  {
-    display: flex;
+  @include mq(tablet) {
+    width: 354px;
+    height: 374px;
   }
-  
-  .team-headline {
-  
+
+  @include mq(desktop) {
+    width: 270px;
+    height: 260px;
+  }
+}
+
+.team-headline {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -48,10 +94,10 @@
   letter-spacing: 0.03em;
   color: #212121;
   margin: 0;
-   margin-bottom: 10px;
-  }
-  
-  .team-position {
+  margin-bottom: 10px;
+}
+
+.team-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -60,6 +106,4 @@
   color: #757575;
   margin: 0;
   margin-bottom: 16px;
-   
-  }
- 
+}
