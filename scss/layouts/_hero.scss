@@ -1,5 +1,5 @@
 .hero-hero {
-  max-width:100%;
+  max-width: 100%;
   max-width: 1600px;
 
   margin-left: auto;
@@ -13,52 +13,37 @@
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  
+
   // background-image: linear-gradient(
   //     rgba(47, 48, 58, 0.4),
   //     rgba(47, 48, 58, 0.4)
   //   ),
   //   url(../images/hero.jpg);
 
-  background-image: url(/images/hero/img-sm.jpg),
-
-    linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    );
+  background-image: url(..//images/hero/img-sm.jpg),
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   @include mq(retina) {
-    background-image: url(/images/hero/img-sm@2x.jpg),
-      linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4));
-    }
+    background-image: url(..//images/hero/img-sm@2x.jpg),
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
 
-       @include mq(tablet) {
-    background-image: url(/images/hero/img-md.jpg),
-      linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4));
-       @include mq(retina) {
-      background-image: url(/images/hero/img-md@2x.jpg),
-        linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4));
-       }
-       }
+  @include mq(tablet) {
+    background-image: url(..//images/hero/img-md.jpg),
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    @include mq(retina) {
+      background-image: url(..//images/hero/img-md@2x.jpg),
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+  }
 
-         @include mq(desktop) {
-    background-image: url(/images/hero/img-lg.jpg),
-      linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4));
-       @include mq(retina) {
-      background-image: url(/images/hero/img-lg@2x.jpg),
-        linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4));
+  @include mq(desktop) {
+    background-image: url(..//images/hero/img-lg.jpg),
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    @include mq(retina) {
+      background-image: url(..//images/hero/img-lg@2x.jpg),
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     }
-    }
-    
+  }
 
   @include mq(mobile-only) {
     max-width: 480px;
