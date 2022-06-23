@@ -12,7 +12,9 @@
   text-align: center;
 
   @include mq(mobile) {
+    margin-bottom: 30px;
     display: block;
+
   }
   @include mq(tablet) {
     gap: 30px;
@@ -54,9 +56,4 @@
   }
 }
 
-.advantages__item:not(:last-child) {
-  @include mq (mobile){
-margin-bottom: 30px;
-
-} }
 

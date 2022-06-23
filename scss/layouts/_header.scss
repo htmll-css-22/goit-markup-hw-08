@@ -47,6 +47,7 @@
   }
 }
 
+
 .contacts__list {
   @include mq(tablet) {
     display: flex;
@@ -76,6 +77,4 @@
 //   }
 // }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
+
