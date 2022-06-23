@@ -20,14 +20,14 @@
         <header class="header">
           <div class="container header__container"> 
               <a class="logo__link" href="./index.html"><span class="logo__text">Web</span>Studio</a>
-                <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                   <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="mobile-button__icon">
                     <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
                     <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
                     </svg>
                     </button>
 
-            <div class="menu-container is-open" id="menu-container" data-menu>
+            <div class="menu-container" id="menu-container" data-menu>
               <nav class="nav">
               <ul class="mobile-menu__nav">
                 <li class="mobile-menu__item">
@@ -41,9 +41,10 @@
                 </li>
               </ul>
               </nav>
+              
 
               <ul class="mobile-menu__contacts">
-                <li class="mobile-menu__item">
+                <li class="mobile-menu__contacts-item">
                   <a href="tel:+380961111111" class="mobile-menu__contacts-link">
                     <div class="contacts__icon">
                     <svg class="contacts__phone" width="10" height="16">
@@ -52,8 +53,8 @@
                     +38 099 111 11 11</div></a>
                 </li>
 
-                <li class="mobile-menu__item">
-                  <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-links">
+                <li class="mobile-menu__contacts-item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link">
                     <div class="contacts__icon">
                     <svg class="contacts__mail" width="16" height="12">
                       <use href="./images/symbol-defs.svg#icon-mail"></use>

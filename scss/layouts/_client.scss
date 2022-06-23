@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  height: 92px;
   border: 1px solid var(--color5);
   border-radius: 4px;
 
@@ -47,21 +48,20 @@
   @include mq(mobile) {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(100% / 2 - 30px);
-    margin-right: -30px;
+    
+    
   }
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(100% / 3 - 30px);
+    
   }
 }
 
-.item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .clients-box {
-  padding-left: 0;
+  gap: 30px;
+  
 }
 
 .client .link-logo:hover,
