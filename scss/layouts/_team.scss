@@ -38,7 +38,6 @@
   @include mq(mobile) {
     &:not(:last-child) {
       margin-right: 0px;
-      
     }
   }
   // @include mq(tablet){
@@ -61,7 +60,9 @@
   display: flex;
 
   @include mq(mobile-only) {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   @include mq(tablet-only) {
     display: flex;

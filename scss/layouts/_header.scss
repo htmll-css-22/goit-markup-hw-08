@@ -8,10 +8,33 @@
 
   display: flex;
 }
+// .mobile-menu__nav {
+//   @include mq(mobile-only) {
+//     display: none;
+//   }
+// }
+.mobile-menu__nav-port {
+  @include mq(mobile-only) {
+    display: none;
+  }
+}
+.mobile-menu__contacts-port {
+  @include mq(mobile-only) {
+    display: none;
+  }
+  @include mq(tablet-only) {
+    @include fonts(500, 14px, 1.14, 0.02em);
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .nav {
   display: flex;
-  align-items: center;
 }
 
 .nav__item:not(:last-child) {
@@ -47,7 +70,6 @@
   }
 }
 
-
 .contacts__list {
   @include mq(tablet) {
     display: flex;
@@ -76,5 +98,3 @@
 //     color: var(--accent-cl);
 //   }
 // }
-
-

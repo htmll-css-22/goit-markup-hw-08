@@ -14,7 +14,7 @@
 }
 .container-adress {
   margin-bottom: 60px;
-  @include mq (desktop){
+  @include mq(desktop) {
     margin: 0;
   }
 }
@@ -39,7 +39,6 @@
   height: 44px;
   border-radius: 50%;
 
-
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--footer-background);
 }
@@ -54,54 +53,52 @@
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  text-align: center;
 
-  @include mq (desktop){
+  @include mq(desktop) {
     width: 100%;
-    
-
+    text-align: left;
   }
-  
 }
 
 .footer-subscribe-container {
   text-align: center;
-  @include mq (mobile){
+  @include mq(mobile) {
     display: block;
   }
-  @include mq (tablet){
+  @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
   }
-  @include mq (desktop){
-  display: flex;
-
- flex-direction: row-reverse;
-}
+  @include mq(desktop) {
+    margin-left: auto;
+  }
 }
 .subscribe-form {
- 
-  @include mq (mobile){
-   
-    max-width: 450px;
+  max-width: 450px;
+  width: 100%;
+  display: block;
+
+  margin-bottom: 20px;
+  // @include mq(mobile) {
+  //   max-width: 450px;
+  //   width: 100%;
+  //   display: block;
+
+  //   margin-bottom: 20px;
+  // }
+  // @include mq(tablet) {
+  //   max-width: 450px;
+  //   width: 100%;
+  //   display: block;
+
+  //   margin-bottom: 20px;
+  // }
+  @include mq(desktop) {
+    max-width: 570px;
     width: 100%;
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  @include mq (tablet){
-   
-    max-width: 450px;
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  @include mq (desktop){
     display: flex;
-    
-    flex-direction: row
-  
+    flex-direction: row;
+  }
 }
 
 .hidden-caption {
@@ -117,7 +114,6 @@
   margin: -1px;
 }
 .subscribe-form-email {
-  width: 358px;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
@@ -129,25 +125,30 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  @include mq (mobile){
-   
+
+  @include mq(mobile) {
     max-width: 450px;
     width: 100%;
     display: block;
-    text-align: center;
+
     margin-bottom: 20px;
   }
-  @include mq (desktop){
-    max-width: 358px;
+  @include mq(tablet) {
+    max-width: 450px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+
+    margin-bottom: 20px;
   }
+  // @include mq(desktop) {
+  //   max-width: 358px;
+  //   width: 100%;
+  //   display: flex;
 
+  //   flex-direction: row;
+  // }
 }
 
-}
 .footer-button-content {
   display: flex;
   justify-content: center;

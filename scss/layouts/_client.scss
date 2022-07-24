@@ -45,23 +45,16 @@
 }
 
 .clients-box {
+  gap: 30px;
   @include mq(mobile) {
     display: flex;
     flex-wrap: wrap;
-    
-    
   }
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
   }
-}
-
-
-.clients-box {
-  gap: 30px;
-  
 }
 
 .client .link-logo:hover,

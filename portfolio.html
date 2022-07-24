@@ -24,26 +24,47 @@
     <a class="logo__link" href="./index.html"><span class="logo__text">Web</span>Studio</a>  
     <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
       <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="mobile-button__icon">
-        <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+        <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu"></use>
         <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
         </svg>
         </button>
       </div>
-      <ul class="nav-list">
-        <li class="nav__item"><a class="link nav__link" href="./index.html">Студия</a></li>
-        <li class="nav__item"><a class="link nav__link nav__link--current" href="./index.html">Портфолио</a></li>
-        <li class="nav__item"><a class="link nav__link" href="">Контакты</a></li>
-      </ul>
-      </nav>
-      <ul class="contacts__lists">
-          <li class="contacts__item"><a class="contacts__link link" href="mailto:info@example.com"><svg class="contacts__icon" width="16"
-                height="12">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>info@example.com</a></li>
-          <li class="contacts__item"><a class="contacts__link link" href="tel:+380991111111"><svg class="contacts__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-mob"></use>
-              </svg>+38 099 111 11 11</a></li>
-      </ul>
+    <ul class="mobile-menu__nav-port">
+      <li class="mobile-menu__item">
+        <a href="./index.html" class="mobile-menu__link">Студия </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфолио</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link">Контакты</a>
+      </li>
+    </ul>
+    </nav>
+    
+    
+    <ul class="mobile-menu__contacts-port">
+      <li class="mobile-menu__contacts-item">
+        <a href="tel:+380961111111" class="mobile-menu__contacts-link">
+          <div class="contacts__icon">
+            <svg class="contacts__phone" width="10" height="16">
+              <use href="./images/symbol-defs.svg#icon-mob"></use>
+            </svg>
+            +38 099 111 11 11
+          </div>
+        </a>
+      </li>
+    
+      <li class="mobile-menu__contacts-item">
+        <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link">
+          <div class="contacts__icon">
+            <svg class="contacts__mail" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>info@example.com
+          </div>
+        </a>
+      </li>
+    </ul>
     </div>
   </header>
 
@@ -51,7 +72,7 @@
 <section class="galerry">
   <div class="container">
     <h1 class="visually-hidden" >Галерея</h1>
-    <ul class="list">
+    <ul class="list-btn">
       <li class="item">
       <button class="galerry-btn" type="button">Все</button>
     </li>

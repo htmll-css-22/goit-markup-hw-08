@@ -2,20 +2,39 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.galerry > .container > .list-btn {
+  justify-content: center;
+  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(mobile-only) {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  @include mq(tablet) {
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
 .galerry > .container > .list {
   justify-content: center;
   margin-bottom: 30px;
   @include mq(mobile) {
     display: flex;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 30px;
     flex-wrap: wrap;
   }
 
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 30px;
     justify-content: left;
   }
 
@@ -23,7 +42,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 30px;
     margin-bottom: 50px;
   }
 }
