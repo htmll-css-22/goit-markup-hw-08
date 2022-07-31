@@ -72,7 +72,7 @@
   @include mq(mobile-only) {
     display: block;
     text-align: left;
-    margin-bottom: 32px;
+    margin-bottom: 270px;
   }
 
   @include mq(tablet) {
@@ -264,7 +264,7 @@
 .contacts__icon {
   @include mq(mobile-only) {
     flex-direction: column;
-    margin-top: auto;
+    margin-top: 32px;
   }
 
   justify-content: center;

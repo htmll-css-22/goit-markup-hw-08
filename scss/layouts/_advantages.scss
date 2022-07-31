@@ -28,13 +28,20 @@
 }
 
 .advantages__title {
+  @include mq(mobile-only) {
+    text-align: center;
+  }
   @include fonts(700, 14px, 1.14, 0.03em, uppercase);
 
   text-align: start;
   margin-top: 0px;
   margin-bottom: 10px;
-  width: 270px;
+
   color: #212121;
+
+  @include mq(mobile-only) {
+    text-align: center;
+  }
 }
 
 .advantages__text {

@@ -1,6 +1,8 @@
 .client {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  @include mq(desktop) {
+    padding-bottom: 94px;
+  }
 }
 .client.container {
   display: flex;
@@ -10,8 +12,21 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-.title {
-  margin-top: 0;
+.client__title {
+  @include fonts(700, 28px, 1.18, 0.03em);
+  text-align: center;
+
+  margin-top: 60px;
+  margin-bottom: 30px;
+  @include mq(tablet) {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    @include fonts(700, 36px, 1.17, 0.03em);
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .link-logo {

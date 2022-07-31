@@ -71,7 +71,7 @@
 @mixin fonts($fw, $fs, $lh, $ls, $tt: false) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: setLineHeight($lh, $fs);
+  line-height: $lh;
   letter-spacing: $ls;
 
   @if $tt {

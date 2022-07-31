@@ -1,4 +1,3 @@
-
 .contacts {
   padding: 60px 0;
   background-color: var(--footer-background);
@@ -38,8 +37,8 @@
 }
 
 .mobile-menu__contacts-link {
-  @include fonts(400, 14px, 1.71, null);
- 
+  @include fonts(500, 14px, 1.14, 0.02em);
+
   color: #757575;
   transition: var(--slow-anim);
 
@@ -47,14 +46,12 @@
   &:focus {
     color: #2196f3;
   }
-  @include mq (mobile-only){
+  @include mq(mobile-only) {
     @include fonts(500, 34px, 1.17, 0.02em);
     flex-direction: column;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
     margin-top: auto;
-  
-
   }
 }
