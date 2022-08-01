@@ -4,8 +4,16 @@ body {
   @include fonts(500, 14px, 1.14, 0.02em);
   font-style: normal;
   color: #212121;
-}
 
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .title {
   @include fonts(700, 28px, 1.17, 0.03em);
   text-align: center;

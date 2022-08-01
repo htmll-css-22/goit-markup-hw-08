@@ -15,6 +15,8 @@
 .container-adress {
   margin-bottom: 60px;
   @include mq(desktop) {
+    text-align: left;
+    display: block;
     margin: 0;
   }
 }
@@ -64,12 +66,15 @@
   text-align: center;
   @include mq(mobile) {
     display: block;
+    text-align: center;
   }
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
   }
   @include mq(desktop) {
+    display: block;
     margin-left: auto;
   }
 }
@@ -98,12 +103,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-  }
-}
-.container-adress {
-  @include mq(desktop) {
-    display: block;
-    text-align: left;
+    margin: 0 auto;
   }
 }
 
@@ -146,19 +146,19 @@
 
     margin-bottom: 20px;
   }
-  // @include mq(desktop) {
-  //   max-width: 358px;
-  //   width: 100%;
-  //   display: flex;
+  @include mq(desktop) {
+    width: 358px;
+    display: flex;
 
-  //   flex-direction: row;
-  // }
+    flex-direction: row;
+  }
 }
 
 .footer-button-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .submit {
@@ -166,4 +166,7 @@
   align-items: center;
   padding-left: 29px;
   margin-left: 12px;
+}
+.text {
+  display: block;
 }
