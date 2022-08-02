@@ -72,7 +72,6 @@
   @include mq(mobile-only) {
     display: block;
     text-align: left;
-    margin-bottom: 270px;
   }
 
   @include mq(tablet) {
@@ -272,10 +271,15 @@
 
   border-radius: 4px;
   margin-top: auto;
+  margin-bottom: 10px;
   flex-direction: column;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
 }
 
 .contacts__mail {
@@ -289,6 +293,10 @@
   fill: #757575;
 
   margin-right: 8px;
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
 }
 
 .contacts__phone {
@@ -300,6 +308,11 @@
   height: 16px;
 
   fill: #757575;
+
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
 }
 .mobile-menu__social-link {
   color: #2196f3;

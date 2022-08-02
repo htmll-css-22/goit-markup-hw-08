@@ -29,7 +29,7 @@
 
 .galerry > .container > .list {
   justify-content: center;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   @include mq(mobile) {
     display: flex;
     justify-content: flex-start;
@@ -49,7 +49,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
 }
 

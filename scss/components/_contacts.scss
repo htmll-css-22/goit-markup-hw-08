@@ -45,6 +45,7 @@
   &:hover,
   &:focus {
     color: #2196f3;
+    fill: #2196f3;
   }
   @include mq(mobile-only) {
     @include fonts(500, 34px, 1.17, 0.02em);
@@ -53,5 +54,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: auto;
+  }
+  @include mq(tablet-only) {
+    @include fonts(500, 12px, 1.16, 0.02em);
   }
 }
