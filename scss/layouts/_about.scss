@@ -10,6 +10,12 @@
   margin-top: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .about__title {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .about__title {
     @include fonts(700, 36px, 1.17, 0.03em);

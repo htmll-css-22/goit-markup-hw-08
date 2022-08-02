@@ -64,6 +64,7 @@
   @include mq(mobile) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   @include mq(tablet) {
     display: flex;

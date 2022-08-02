@@ -5,7 +5,7 @@
   color: #000000;
   margin-right: 93px;
 
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     margin-right: 274px;
   }
 }

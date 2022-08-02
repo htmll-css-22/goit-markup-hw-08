@@ -12,17 +12,17 @@
   display: flex;
 }
 // .mobile-menu__nav {
-//   @include mq(mobile-only) {
+//   @include mq(mobile) {
 //     display: none;
 //   }
 // }
 .mobile-menu__nav-port {
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     display: none;
   }
 }
 .mobile-menu__contacts-port {
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     display: none;
   }
   @include mq(tablet-only) {

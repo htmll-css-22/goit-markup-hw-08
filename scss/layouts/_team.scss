@@ -63,7 +63,7 @@
 .team-list {
   display: flex;
 
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

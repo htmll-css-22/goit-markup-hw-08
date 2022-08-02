@@ -47,7 +47,7 @@
     color: #2196f3;
     fill: #2196f3;
   }
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     @include fonts(500, 34px, 1.17, 0.02em);
     flex-direction: column;
     text-align: left;

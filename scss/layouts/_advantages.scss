@@ -15,6 +15,7 @@
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   @include mq(tablet) {
     gap: 30px;
@@ -28,7 +29,7 @@
 }
 
 .advantages__title {
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     text-align: center;
   }
   @include fonts(700, 14px, 1.14, 0.03em, uppercase);
@@ -39,7 +40,7 @@
 
   color: #212121;
 
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     text-align: center;
   }
 }
@@ -52,7 +53,7 @@
   margin: 0;
 
   @include mq(mobile) {
-    width: 450px;
+    // width: 450px;
   }
 
   @include mq(tablet) {

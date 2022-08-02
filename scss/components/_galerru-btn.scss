@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 40px;
